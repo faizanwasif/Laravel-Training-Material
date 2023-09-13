@@ -1,0 +1,46 @@
+ 1: Install and Configure XAMPP/WAMP
+
+    Download and install XAMPP or WAMP on your machine from their respective websites.
+        XAMPP: https://www.apachefriends.org/index.html (Linux)
+        WAMP:  https://www.wampserver.com/ (Windows)
+
+    Follow the installation instructions provided on the XAMPP or WAMP website to configure the software according to your requirements.
+
+ 2: Install Composer and PHP
+
+    Install Composer on your XAMPP/WAMP environment. 
+    Download Composer from the official Composer website: https://getcomposer.org/download/
+
+    Ensure PHP is properly installed and configured within your XAMPP/WAMP environment. 
+    Composer requires PHP to be in your system's PATH.
+
+ 3: Create a Laravel Project and Use XAMPP/WAMP to Run It
+
+    Open a command prompt or terminal window.
+
+    Create a new Laravel project using Composer:
+    
+    composer create-project --prefer-dist laravel/laravel my-laravel-app
+    Replace "my-laravel-app" with your desired project name.
+
+ 4: Create a Hello World Controller and Use Blade Templates
+	
+	Useful Links:
+
+	https://laravel.com/docs/10.x/controllers#:~:text=Controllers%20can%20group%20related%20request,app%2FHttp%2FControllers%20directory.
+	https://laravel.com/docs/10.x/routing
+	https://laravel.com/docs/10.x/eloquent	
+
+    Create a "HelloController" within your Laravel project by running this command in the terminal:
+	php artisan make:controller HelloController
+
+    In the "HelloController" (located in the "app/Http/Controllers" directory), create a method to display a "Hello, World!" message.
+
+    Create a corresponding view blade template named "hello.blade.php" in the "resources/views" directory with the appropriate HTML content.
+
+    Modify the "helloWorld" method in your "HelloController" to return the view.
+
+    Set up a route in the "routes/web.php" file to access your "HelloController" and view.
+
+Now, you should be able to access your "Hello, World!" message by visiting http://localhost/my-laravel-app/public/hello in your web browser, assuming "my-laravel-app" is the name of your Laravel project folder.
+
